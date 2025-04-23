@@ -1,0 +1,102 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #fdfbfb, #ebedee);
+    margin: 0;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+  }
+  .container {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    padding: 2rem;
+    max-width: 1200px;
+    width: 100%;
+  }
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  .add-task {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  }
+  button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #69bff8;
+    color: white;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #57aeea;
+  }
+  #taskCounters {
+    margin-top: 10px;
+    text-align: center;
+  }
+  .counter-box {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #eef6fc;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  .task-columns {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  .task-column {
+    flex: 1;
+    min-height: 200px;
+    padding: 1rem;
+    border-radius: 10px;
+  }
+  .task-column:nth-child(1) {
+    background-color: #d4eefd; /* Нові */
+  }
+  .task-column:nth-child(2) {
+    background-color: #fff8dc; /* В процесі */
+  }
+  .task-column:nth-child(3) {
+    background-color: #d4edda; /* Завершені */
+  }
+  .task-column h3 {
+    text-align: center;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+    min-height: 150px;
+  }
+  li {
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    cursor: grab;
+  }
+  .task-buttons button {
+    background-color: black;
+    color: white;
+  }
+  
